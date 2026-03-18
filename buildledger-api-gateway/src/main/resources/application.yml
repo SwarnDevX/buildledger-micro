@@ -1,0 +1,42 @@
+server:
+  port: 8079
+
+spring:
+  application:
+    name: api-gateway
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+          lower-case-service-id: true
+      routes:
+        - id: iam-service
+          uri: lb://iam-service
+          predicates:
+            - Path=/api/auth/**, /api/users/**, /api/internal/auth/**, /api/internal/users/**, /api/internal/audit/**
+
+        - id: vendor-service
+          uri: lb://vendor-service
+          predicates:
+            - Path=/api/vendors/**, /internal/vendors/**
+
+        - id: contractmanagement
+          uri: lb://contractcreation
+          predicates:
+            - Path=/contracts/**, /projects/**, /terms/**
+
+        - id: delivery-service
+          uri: lb://delivery-service
+          predicates:
+            - Path=/deliveries/**, /services/**, /internal/contracts/**
+
+        - id: compliance-audit-service
+          uri: lb://compliance-audit-service
+          predicates:
+            - Path=/api/v1/audits/**, /api/v1/compliance-records/**, /api/v1/compliance-validation/**, /api/v1/system/compliance/**
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/

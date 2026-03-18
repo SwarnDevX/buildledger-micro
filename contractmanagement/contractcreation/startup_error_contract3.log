@@ -1,0 +1,31 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] --------------------< com.example:contractcreation >--------------------
+[INFO] Building contractcreation 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> spring-boot:3.2.5:run (default-cli) > test-compile @ contractcreation >>>
+Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-devtools/3.2.5/spring-boot-devtools-3.2.5.pom
+Progress (1): 1.0 kBProgress (1): 2.3 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-devtools/3.2.5/spring-boot-devtools-3.2.5.pom (2.3 kB at 2.0 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-devtools/3.2.5/spring-boot-devtools-3.2.5.jar
+Progress (1): 0.9/203 kBProgress (1): 2.3/203 kBProgress (1): 3.6/203 kBProgress (1): 5.0/203 kBProgress (1): 6.4/203 kBProgress (1): 7.7/203 kBProgress (1): 9.1/203 kBProgress (1): 10/203 kB Progress (1): 12/203 kBProgress (1): 13/203 kBProgress (1): 15/203 kBProgress (1): 16/203 kBProgress (1): 17/203 kBProgress (1): 19/203 kBProgress (1): 20/203 kBProgress (1): 21/203 kBProgress (1): 23/203 kBProgress (1): 24/203 kBProgress (1): 26/203 kBProgress (1): 27/203 kBProgress (1): 28/203 kBProgress (1): 29/203 kBProgress (1): 30/203 kBProgress (1): 31/203 kBProgress (1): 33/203 kBProgress (1): 34/203 kBProgress (1): 36/203 kBProgress (1): 37/203 kBProgress (1): 38/203 kBProgress (1): 40/203 kBProgress (1): 41/203 kBProgress (1): 42/203 kBProgress (1): 44/203 kBProgress (1): 45/203 kBProgress (1): 46/203 kBProgress (1): 48/203 kBProgress (1): 49/203 kBProgress (1): 51/203 kBProgress (1): 52/203 kBProgress (1): 56/203 kBProgress (1): 60/203 kBProgress (1): 65/203 kBProgress (1): 69/203 kBProgress (1): 73/203 kBProgress (1): 77/203 kBProgress (1): 82/203 kBProgress (1): 86/203 kBProgress (1): 90/203 kBProgress (1): 94/203 kBProgress (1): 98/203 kBProgress (1): 103/203 kBProgress (1): 107/203 kBProgress (1): 111/203 kBProgress (1): 115/203 kBProgress (1): 120/203 kBProgress (1): 124/203 kBProgress (1): 128/203 kBProgress (1): 132/203 kBProgress (1): 137/203 kBProgress (1): 141/203 kBProgress (1): 145/203 kBProgress (1): 149/203 kBProgress (1): 153/203 kBProgress (1): 158/203 kBProgress (1): 160/203 kBProgress (1): 164/203 kBProgress (1): 168/203 kBProgress (1): 172/203 kBProgress (1): 177/203 kBProgress (1): 181/203 kBProgress (1): 185/203 kBProgress (1): 189/203 kBProgress (1): 194/203 kBProgress (1): 198/203 kBProgress (1): 202/203 kBProgress (1): 203 kB                        Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-devtools/3.2.5/spring-boot-devtools-3.2.5.jar (203 kB at 1.1 MB/s)
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ contractcreation ---
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] Copying 0 resource from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.11.0:compile (default-compile) @ contractcreation ---
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  13.768 s
+[INFO] Finished at: 2026-03-17T23:47:10+05:30
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.11.0:compile (default-compile) on project contractcreation: Resolution of annotationProcessorPath dependencies failed: version can neither be null, empty nor blank -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
